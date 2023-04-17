@@ -38,4 +38,6 @@ select * from 图书 where 单价 > 20;
 select * from 图书 where 单价 between 20 and 30;
 select * from 图书 where 作者 like '周%';
 select 姓名,电话 from 借阅,读者 where 借阅.读者编号=读者.读者编号 and 图书编号='1001';
+update 借阅 set 图书状态='续' where 图书编号='1004';
+update 图书 set 出版社="中国铁道出版社" where 图书编号='1004';
 select 出版社,sum(单价) from 图书 group by 出版社;
