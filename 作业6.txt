@@ -4,7 +4,7 @@ create table if not exists 读者(
     -> 读者编号 char(10) not null primary key,
     -> 姓名 varchar(10) not null,
     -> 学号 char(10) not null,
-    -> 电话 char(10)) character set utf8;
+    -> 电话 char(20)) character set utf8;
 create table if not exists 图书(
     -> 图书编号 char(10) not null primary key,
     -> 书名 varchar(50),
